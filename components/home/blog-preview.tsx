@@ -4,9 +4,9 @@ import { blogPosts } from "@/mock/navigation";
 
 export function BlogPreview() {
   return (
-    <section className="py-16 lg:py-24 bg-[#F9F6F2]">
+    <section className="py-10 lg:py-14 bg-[#F9F6F2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-end justify-between mb-10">
+        <div className="flex items-end justify-between mb-6">
           <div>
             <p className="text-[10px] uppercase tracking-[0.22em] text-[#C4956A] font-bold mb-2">Guides & Lookbook</p>
             <h2 className="font-black text-2xl sm:text-3xl text-[#1A1A1A] uppercase tracking-[0.04em]">The Fintava Edit</h2>

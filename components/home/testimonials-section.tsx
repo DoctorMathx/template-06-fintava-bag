@@ -9,9 +9,9 @@ const testimonials = [
 
 export function TestimonialsSection() {
   return (
-    <section className="py-16 lg:py-24 bg-[#1A1A1A]">
+    <section className="py-10 lg:py-14 bg-[#1A1A1A]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-7">
           <p className="text-[10px] uppercase tracking-[0.22em] text-[#C4956A] font-bold mb-2">Customer Stories</p>
           <h2 className="font-black text-2xl sm:text-3xl text-white uppercase tracking-[0.04em]">What They Say</h2>
           <div className="flex justify-center items-center gap-1.5 mt-4">

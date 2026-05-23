@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function EditorialBanner() {
   return (
-    <section className="py-16 lg:py-20 bg-white">
+    <section className="py-10 lg:py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-4 sm:gap-6">
 

@@ -4,9 +4,9 @@ import { categoryTiles } from "@/mock/navigation";
 
 export function CategoryGrid() {
   return (
-    <section className="py-16 lg:py-20 bg-white">
+    <section className="py-10 lg:py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-end justify-between mb-10">
+        <div className="flex items-end justify-between mb-6">
           <div>
             <p className="text-[10px] uppercase tracking-[0.22em] text-[#C4956A] font-bold mb-2">Explore</p>
             <h2 className="font-black text-2xl sm:text-3xl text-[#1A1A1A] uppercase tracking-[0.04em]">Shop by Category</h2>

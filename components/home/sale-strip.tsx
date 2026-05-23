@@ -7,10 +7,10 @@ export function SaleStrip() {
   const products = getSaleProducts().slice(0, 4);
 
   return (
-    <section className="py-16 lg:py-20 bg-white">
+    <section className="py-10 lg:py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Banner */}
-        <div className="relative overflow-hidden bg-[#1A1A1A] mb-10" style={{ minHeight: "160px" }}>
+        <div className="relative overflow-hidden bg-[#1A1A1A] mb-7" style={{ minHeight: "140px" }}>
           <Image
             src="/images/sale-banner.jpg"
             alt="Sale"
