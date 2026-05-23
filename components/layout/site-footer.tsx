@@ -96,12 +96,11 @@ export function SiteFooter() {
           </form>
           <div className="mt-6">
             <p className="text-[11px] text-white/40 uppercase tracking-widest mb-3">Secure Payments</p>
-            <div className="flex gap-2 flex-wrap">
-              {["Visa", "MC", "Verve", "Pay", "Bank"].map((p) => (
-                <span key={p} className="border border-white/15 text-[10px] text-white/50 px-2.5 py-1 font-medium">
-                  {p}
-                </span>
-              ))}
+            <div className="flex gap-2 flex-wrap items-center">
+              <span className="border border-[#C4956A]/60 bg-[#C4956A]/10 text-[10px] text-[#C4956A] px-3 py-1.5 font-bold uppercase tracking-widest">
+                FintavaPay
+              </span>
+              <span className="text-[9px] text-white/30 uppercase tracking-wider">Secured & Encrypted</span>
             </div>
           </div>
         </div>

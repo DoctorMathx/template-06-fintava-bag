@@ -14,7 +14,7 @@ export default function CheckoutPage() {
   const router = useRouter();
   const [step, setStep] = useState(1);
   const [form, setForm] = useState({ firstName: "", lastName: "", email: "", phone: "", address: "", city: "", state: "", zip: "" });
-  const [payment, setPayment] = useState("card");
+  const [payment] = useState("fintavapay");
 
   const set = (k: string, v: string) => setForm((f) => ({ ...f, [k]: v }));
   const shipping = subtotal.amount >= 100000 ? 0 : 5000;
@@ -90,24 +90,24 @@ export default function CheckoutPage() {
             {step === 2 && (
               <>
                 <h2 className="font-bold text-sm uppercase tracking-[0.12em] mb-4">Payment Method</h2>
-                <div className="space-y-3">
-                  {[["card","Pay by Card"],["transfer","Bank Transfer"],["pod","Pay on Delivery (Lagos/Abuja/PH only)"]].map(([val, label]) => (
-                    <label key={val} className={`flex items-center gap-3 border p-4 cursor-pointer transition-colors ${payment === val ? "border-[#1A1A1A] bg-[#F9F6F2]" : "border-neutral-200 hover:border-neutral-300"}`}>
-                      <input type="radio" name="payment" value={val} checked={payment === val} onChange={() => setPayment(val)} className="accent-[#1A1A1A]" />
-                      <span className="text-xs font-semibold text-[#1A1A1A]">{label}</span>
-                    </label>
+                <div className="border border-[#C4956A]/40 bg-[#C4956A]/5 p-5 rounded-none">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-3 h-3 rounded-full bg-[#C4956A] flex-shrink-0" />
+                    <span className="text-sm font-bold text-[#1A1A1A] uppercase tracking-wider">FintavaPay</span>
+                    <span className="ml-auto text-[9px] uppercase tracking-widest text-[#C4956A] font-bold border border-[#C4956A]/50 px-2 py-0.5">Secured</span>
+                  </div>
+                  <p className="text-[11px] text-neutral-500 leading-relaxed pl-6">
+                    Complete your purchase securely with FintavaPay — Nigeria&apos;s trusted checkout. Fast, safe, and encrypted.
+                  </p>
+                </div>
+                <div className="space-y-3 mt-4">
+                  {[["Account Number / Reference","account-ref","text"],["Phone Number","phone","tel"]].map(([label, id, type]) => (
+                    <div key={id}>
+                      <label className="text-[10px] uppercase tracking-widest text-neutral-500 block mb-1">{label}</label>
+                      <input required type={type} className="w-full border border-neutral-200 px-4 py-3 text-sm focus:outline-none focus:border-[#1A1A1A] bg-white" />
+                    </div>
                   ))}
                 </div>
-                {payment === "card" && (
-                  <div className="space-y-3 mt-4">
-                    {[["Card Number","card-number","text"],["Expiry (MM/YY)","expiry","text"],["CVV","cvv","text"]].map(([label, id, type]) => (
-                      <div key={id}>
-                        <label className="text-[10px] uppercase tracking-widest text-neutral-500 block mb-1">{label}</label>
-                        <input required type={type} className="w-full border border-neutral-200 px-4 py-3 text-sm focus:outline-none focus:border-[#1A1A1A] bg-white" />
-                      </div>
-                    ))}
-                  </div>
-                )}
                 <button type="submit" className="w-full bg-[#1A1A1A] text-white py-4 text-xs font-bold uppercase tracking-[0.14em] hover:bg-[#C4956A] transition-colors active:scale-95 mt-4">
                   Place Order — {formatMoney({ amount: total, currency: "NGN" })}
                 </button>

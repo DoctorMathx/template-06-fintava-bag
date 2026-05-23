@@ -7,7 +7,7 @@ export function HeroSection() {
       {/* Full bleed hero image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero-main.jpg"
+          src="/images/PLP_HANDBAGS_HEADER_1.jpg"
           alt="Fintava — For going everywhere"
           fill
           priority

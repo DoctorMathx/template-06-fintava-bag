@@ -10,7 +10,7 @@ export function EditorialBanner() {
           {/* Panel 1 — dark/hero */}
           <div className="relative overflow-hidden bg-[#1A1A1A] group" style={{ minHeight: "480px" }}>
             <Image
-              src="/images/editorial-womens.jpg"
+              src="/images/PLP_WOMENS_NA_FOOTER_1.jpg"
               alt="Women's Collection"
               fill
               className="object-cover object-center opacity-75 transition-transform duration-700 group-hover:scale-[1.03]"
@@ -35,7 +35,7 @@ export function EditorialBanner() {
             {/* Panel 2 — cream */}
             <div className="relative overflow-hidden bg-[#F9F6F2] group flex-1" style={{ minHeight: "230px" }}>
               <Image
-                src="/images/editorial-mens.jpg"
+                src="/images/pexels-photo-6650001.jpg"
                 alt="Men's Collection"
                 fill
                 className="object-cover object-center opacity-80 transition-transform duration-700 group-hover:scale-[1.03]"
@@ -56,7 +56,7 @@ export function EditorialBanner() {
             {/* Panel 3 — sale */}
             <div className="relative overflow-hidden bg-[#C4956A] group flex-1" style={{ minHeight: "230px" }}>
               <Image
-                src="/images/editorial-sale.jpg"
+                src="/images/PLP_HANDBAGS_03_04.jpg"
                 alt="Sale"
                 fill
                 className="object-cover object-center opacity-60 transition-transform duration-700 group-hover:scale-[1.03]"

@@ -42,12 +42,12 @@ export const navItems: NavItem[] = [
 ];
 
 export const categoryTiles = [
-  { label: "Shoulder Bags", href: "/collections/shoulder-bags", image: "/images/cat-shoulder.jpg" },
-  { label: "Tote Bags",     href: "/collections/totes",         image: "/images/cat-tote.jpg" },
-  { label: "Crossbody",     href: "/collections/crossbody-bags",image: "/images/cat-crossbody.jpg" },
-  { label: "Mini Bags",     href: "/collections/mini-bags",     image: "/images/cat-mini.jpg" },
-  { label: "Men's",         href: "/collections/mens",          image: "/images/cat-mens.jpg" },
-  { label: "Wallets",       href: "/collections/wallets-accessories", image: "/images/cat-wallets.jpg" },
+  { label: "Shoulder Bags", href: "/collections/shoulder-bags", image: "/images/pexels-photo-9327162.jpg" },
+  { label: "Tote Bags",     href: "/collections/totes",         image: "/images/collection-of-handbags-standing-in-a-row.jpg" },
+  { label: "Crossbody",     href: "/collections/crossbody-bags",image: "/images/pexels-photo-8801036.jpg" },
+  { label: "Mini Bags",     href: "/collections/mini-bags",     image: "/images/pexels-photo-8335273.jpg" },
+  { label: "Men's",         href: "/collections/mens",          image: "/images/pexels-photo-6650001.jpg" },
+  { label: "Wallets",       href: "/collections/wallets-accessories", image: "/images/pexels-photo-8743973.jpg" },
 ];
 
 export const footerLinks = {
@@ -76,7 +76,7 @@ export const blogPosts: BlogPost[] = [
     slug: "how-to-style-a-leather-tote",
     title: "How to Style a Leather Tote Bag",
     excerpt: "From the boardroom to the weekend market — the leather tote is the most versatile bag you will ever own.",
-    coverImage: "/images/blog-tote-style.jpg",
+    coverImage: "/images/PLP_WOMENS_NA_FOOTER_2.jpg",
     author: "Fintava Editorial",
     date: "May 15, 2026",
     readTime: "4 min read",
@@ -86,7 +86,7 @@ export const blogPosts: BlogPost[] = [
     slug: "leather-care-guide",
     title: "The Complete Leather Care Guide",
     excerpt: "A well-cared-for leather bag is a lifetime investment. Here is everything you need to know to keep yours flawless.",
-    coverImage: "/images/blog-leather-care.jpg",
+    coverImage: "/images/SU23_JULY_ELVSTILL_VERT_1.jpg",
     author: "Fintava Editorial",
     date: "May 8, 2026",
     readTime: "6 min read",
@@ -96,7 +96,7 @@ export const blogPosts: BlogPost[] = [
     slug: "bags-for-nigerian-professional-women",
     title: "The Best Bags for Nigerian Professional Women",
     excerpt: "From high-powered Lagos boardrooms to stylish Abuja networking events — bags that keep up with your ambition.",
-    coverImage: "/images/blog-professional.jpg",
+    coverImage: "/images/PLP_HANDBAGS_HEADER_1.jpg",
     author: "Fintava Editorial",
     date: "Apr 28, 2026",
     readTime: "5 min read",
