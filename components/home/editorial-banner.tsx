@@ -18,8 +18,8 @@ export function EditorialBanner() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
             <div className="absolute bottom-0 left-0 p-8 sm:p-10">
               <p className="text-[10px] uppercase tracking-[0.2em] text-white/60 mb-2">Women&apos;s</p>
-              <h3 className="font-black text-2xl sm:text-3xl text-white uppercase leading-tight mb-4">
-                Carry the<br />room.
+              <h3 className="font-display text-3xl sm:text-4xl text-white leading-[0.95] mb-5" style={{ fontWeight: 500, letterSpacing: "-0.01em" }}>
+                Carry the<br /><em className="italic font-light">room</em>.
               </h3>
               <Link
                 href="/collections/womens"
@@ -43,7 +43,7 @@ export function EditorialBanner() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 p-6 sm:p-8">
                 <p className="text-[10px] uppercase tracking-[0.2em] text-white/60 mb-1">Men&apos;s</p>
-                <h3 className="font-black text-xl text-white uppercase mb-3">Made for leaders.</h3>
+                <h3 className="font-display text-2xl text-white mb-3" style={{ fontWeight: 500 }}>Made for leaders.</h3>
                 <Link
                   href="/collections/mens"
                   className="inline-block bg-white text-[#1A1A1A] px-5 py-2 text-[10px] font-bold uppercase tracking-[0.14em] hover:bg-[#C4956A] hover:text-white transition-colors active:scale-95"
@@ -64,7 +64,7 @@ export function EditorialBanner() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#C4956A]/80 to-transparent" />
               <div className="absolute bottom-0 left-0 p-6 sm:p-8">
                 <p className="text-[10px] uppercase tracking-[0.2em] text-white/70 mb-1">Limited Time</p>
-                <h3 className="font-black text-xl text-white uppercase mb-3">Up to 40% off.</h3>
+                <h3 className="font-display text-2xl text-white mb-3" style={{ fontWeight: 500 }}>Up to 40% off.</h3>
                 <Link
                   href="/collections/sale"
                   className="inline-block bg-[#1A1A1A] text-white px-5 py-2 text-[10px] font-bold uppercase tracking-[0.14em] hover:bg-white hover:text-[#1A1A1A] transition-colors active:scale-95"

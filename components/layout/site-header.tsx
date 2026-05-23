@@ -50,8 +50,8 @@ export function SiteHeader() {
 
           {/* Logo */}
           <Link href="/" className="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0">
-            <span className="font-black text-xl sm:text-2xl tracking-[0.06em] text-[#1A1A1A] hover:text-[#C4956A] transition-colors">
-              FINTAVA
+            <span className="font-display font-black text-2xl sm:text-3xl tracking-[0.02em] text-[#1A1A1A] hover:text-[#C4956A] transition-colors">
+              Fintava
             </span>
           </Link>
 
@@ -136,8 +136,8 @@ export function SiteHeader() {
           <div className="absolute inset-0 bg-black/40" onClick={() => setMobileOpen(false)} />
           <div className="absolute left-0 top-0 bottom-0 w-[300px] bg-white flex flex-col overflow-y-auto">
             <div className="flex items-center justify-between px-5 py-4 border-b border-neutral-100">
-              <Link href="/" className="font-black text-lg tracking-[0.06em]" onClick={() => setMobileOpen(false)}>
-                FINTAVA
+              <Link href="/" className="font-display font-black text-xl tracking-[0.02em]" onClick={() => setMobileOpen(false)}>
+                Fintava
               </Link>
               <button onClick={() => setMobileOpen(false)} aria-label="Close">
                 <X className="w-5 h-5" />

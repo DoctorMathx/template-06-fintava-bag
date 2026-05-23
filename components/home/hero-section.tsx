@@ -3,72 +3,71 @@ import Image from "next/image";
 
 export function HeroSection() {
   return (
-    <section className="relative w-full overflow-hidden">
-      <div className="grid lg:grid-cols-2" style={{ minHeight: "clamp(520px, 85vh, 860px)" }}>
+    <section className="relative w-full overflow-hidden bg-[#EDE8E1]">
+      {/* Full-bleed image */}
+      <div className="relative w-full" style={{ height: "clamp(560px, 78vh, 820px)" }}>
+        <Image
+          src="/images/hero-bags-editorial.png"
+          alt="Fintava — Premium leather bags"
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+        />
 
-        {/* LEFT — editorial dark panel */}
-        <div className="bg-[#111111] flex items-center order-2 lg:order-1 px-8 sm:px-12 lg:px-16 xl:px-20 py-14 lg:py-0">
-          <div className="max-w-[440px] w-full">
-            <p className="text-[10px] uppercase tracking-[0.30em] text-[#C4956A] font-bold mb-5">
-              2026 Collection
-            </p>
-            <h1
-              className="font-black text-white uppercase leading-[0.9] mb-6"
-              style={{ fontSize: "clamp(2.8rem, 4.8vw, 4.8rem)", letterSpacing: "-0.02em" }}
-            >
-              Crafted for<br />every<br />chapter.
-            </h1>
-            <div className="w-10 h-[2px] bg-[#C4956A] mb-6" />
-            <p className="text-white/50 text-[13px] leading-[1.8] mb-10 max-w-[310px]">
-              Premium leather goods for Nigeria&apos;s modern woman and man. Built to last. Designed to turn heads.
-            </p>
-            <Link
-              href="/collections/womens"
-              className="inline-block bg-white text-[#111111] px-10 py-4 text-[11px] font-black uppercase tracking-[0.20em] hover:bg-[#C4956A] hover:text-white transition-all duration-200 active:scale-95"
-            >
-              Shop the Collection
-            </Link>
+        {/* Soft gradient on bottom-left only — preserves the natural image elsewhere */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-black/55 via-black/15 to-transparent lg:from-black/45 lg:via-transparent" />
 
-            {/* stats row */}
-            <div className="flex gap-8 mt-12 pt-10 border-t border-white/10">
-              {[["12+", "Bag Styles"], ["100%", "Genuine Leather"], ["₦0", "Delivery 100k+"]].map(([val, lbl]) => (
-                <div key={lbl}>
-                  <p className="text-white font-black text-lg leading-none">{val}</p>
-                  <p className="text-white/35 text-[10px] uppercase tracking-widest mt-1">{lbl}</p>
-                </div>
-              ))}
+        {/* Eyebrow — top center, Coach-style mini-headline */}
+        <div className="absolute top-8 sm:top-12 left-1/2 -translate-x-1/2 text-center">
+          <p className="text-white/85 text-[10px] sm:text-[11px] uppercase tracking-[0.32em] font-medium">
+            The New Season
+          </p>
+        </div>
+
+        {/* Main content — bottom-left aligned, Coach-style */}
+        <div className="absolute inset-x-0 bottom-0">
+          <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 pb-12 sm:pb-16 lg:pb-20">
+            <div className="max-w-xl">
+              <h1
+                className="font-display text-white leading-[0.95] mb-6 sm:mb-8"
+                style={{
+                  fontSize: "clamp(2.6rem, 6vw, 5.2rem)",
+                  letterSpacing: "-0.02em",
+                  fontWeight: 500,
+                }}
+              >
+                Carry your<br />
+                <em className="italic font-light text-white">story</em>.
+              </h1>
+              <p className="text-white/85 text-[13px] sm:text-sm leading-[1.7] mb-7 sm:mb-9 max-w-[380px] font-light">
+                Premium leather bags, handcrafted for the discerning Nigerian. Built to last. Designed to be loved.
+              </p>
+              <Link
+                href="/collections/womens"
+                className="inline-block bg-white text-[#1A1A1A] px-9 py-3.5 text-[11px] font-bold uppercase tracking-[0.22em] hover:bg-[#C4956A] hover:text-white transition-all duration-300 active:scale-95"
+              >
+                Shop the Collection
+              </Link>
             </div>
           </div>
         </div>
+      </div>
 
-        {/* RIGHT — hero image */}
-        <div className="relative order-1 lg:order-2 overflow-hidden bg-[#EDE8E1]" style={{ minHeight: "clamp(300px, 50vw, 860px)" }}>
-          <Image
-            src="/images/hero-bags-editorial.png"
-            alt="Fintava — Premium leather bags"
-            fill
-            priority
-            className="object-cover object-center"
-            sizes="(max-width: 1024px) 100vw, 50vw"
-          />
-
-          {/* Floating featured card — bottom left of image */}
-          <div className="absolute bottom-6 left-6 hidden lg:block bg-white/95 backdrop-blur-sm p-5 w-52 shadow-2xl">
-            <p className="text-[9px] uppercase tracking-[0.18em] text-[#C4956A] font-bold mb-1">Featured Drop</p>
-            <p className="text-xs font-bold text-[#1A1A1A] leading-snug mb-2">Fintava City Shoulder Bag</p>
-            <p className="text-xs text-neutral-500">from ₦185,000</p>
-            <Link
-              href="/products/fintava-city-shoulder-bag"
-              className="mt-3 block text-[10px] font-bold uppercase tracking-widest text-[#1A1A1A] hover:text-[#C4956A] transition-colors"
-            >
-              Shop Now →
-            </Link>
-          </div>
-
-          {/* "New" badge — top right */}
-          <div className="absolute top-6 right-6 bg-[#C4956A] text-white text-[9px] font-black uppercase tracking-[0.18em] px-3 py-2">
-            New Season
-          </div>
+      {/* Coach-style tickers below image */}
+      <div className="bg-[#1A1A1A] text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6 text-center">
+          {[
+            ["Complimentary Delivery", "On orders above ₦100,000"],
+            ["100% Genuine Leather", "Crafted to last a lifetime"],
+            ["14-Day Returns", "Free, easy & hassle-free"],
+            ["FintavaPay Secure", "Encrypted checkout"],
+          ].map(([title, sub]) => (
+            <div key={title} className="flex flex-col">
+              <span className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.16em] text-white">{title}</span>
+              <span className="text-[9px] sm:text-[10px] text-white/45 mt-0.5">{sub}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -11,7 +11,7 @@ export function FeaturedProducts() {
         <div className="flex items-end justify-between mb-6">
           <div>
             <p className="text-[10px] uppercase tracking-[0.22em] text-[#C4956A] font-bold mb-2">Our Favourites</p>
-            <h2 className="font-black text-2xl sm:text-3xl text-[#1A1A1A] uppercase tracking-[0.04em]">Bestsellers</h2>
+            <h2 className="font-display text-3xl sm:text-4xl text-[#1A1A1A] tracking-tight" style={{ fontWeight: 500 }}>Bestsellers.</h2>
           </div>
           <Link href="/collections/bestsellers" className="hidden sm:block text-[10px] uppercase tracking-[0.14em] font-bold text-neutral-500 hover:text-[#1A1A1A] transition-colors">
             View All →

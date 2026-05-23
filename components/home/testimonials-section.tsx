@@ -13,7 +13,7 @@ export function TestimonialsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-7">
           <p className="text-[10px] uppercase tracking-[0.22em] text-[#C4956A] font-bold mb-2">Customer Stories</p>
-          <h2 className="font-black text-2xl sm:text-3xl text-white uppercase tracking-[0.04em]">What They Say</h2>
+          <h2 className="font-display text-3xl sm:text-4xl text-white tracking-tight" style={{ fontWeight: 500 }}>What they say.</h2>
           <div className="flex justify-center items-center gap-1.5 mt-4">
             {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-[#C4956A] text-[#C4956A]" />)}
             <span className="text-white/50 text-xs ml-2">4.9/5 from 2,100+ reviews</span>

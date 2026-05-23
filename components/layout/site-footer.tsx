@@ -27,8 +27,8 @@ export function SiteFooter() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Brand */}
         <div>
-          <Link href="/" className="font-black text-2xl tracking-[0.06em] hover:text-[#C4956A] transition-colors block mb-4">
-            FINTAVA
+          <Link href="/" className="font-display font-black text-3xl tracking-[0.02em] hover:text-[#C4956A] transition-colors block mb-4">
+            Fintava
           </Link>
           <p className="text-[13px] text-white/60 leading-relaxed mb-6">
             Curated luxury leather goods for Nigeria&apos;s discerning woman and man. Crafted to last. Designed to impress.

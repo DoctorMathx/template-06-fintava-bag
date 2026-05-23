@@ -20,7 +20,7 @@ export function SaleStrip() {
           <div className="relative flex flex-col sm:flex-row items-center justify-between gap-4 px-8 sm:px-12 py-8">
             <div>
               <p className="text-[10px] uppercase tracking-[0.22em] text-[#C4956A] font-bold mb-1">Summer Sale</p>
-              <h2 className="font-black text-3xl sm:text-4xl text-white uppercase tracking-[0.02em]">Up to 40% Off.</h2>
+              <h2 className="font-display text-3xl sm:text-5xl text-white tracking-tight" style={{ fontWeight: 500 }}>Up to 40% off.</h2>
             </div>
             <Link
               href="/collections/sale"
