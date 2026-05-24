@@ -16,7 +16,7 @@ export function AnnouncementBar() {
   if (!visible) return null;
 
   return (
-    <div className="relative bg-[#1A1A1A] text-white text-center py-2.5 px-10 text-[11px] sm:text-xs font-medium tracking-[0.12em] uppercase">
+    <div className="relative text-white text-center py-2.5 px-10 text-[11px] sm:text-xs font-medium tracking-[0.12em] uppercase" style={{ backgroundColor: "#6A0101" }}>
       {announcements[index]}
       <button
         onClick={() => setVisible(false)}

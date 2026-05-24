@@ -57,7 +57,7 @@ export function HeroSection() {
       </div>
 
       {/* Coach-style tickers below image */}
-      <div className="bg-[#1A1A1A] text-white">
+      <div className="text-white" style={{ backgroundColor: "#3D0000" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6 text-center">
           {[
             ["Complimentary Delivery", "On orders above ₦100,000"],
