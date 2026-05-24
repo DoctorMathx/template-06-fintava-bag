@@ -8,7 +8,7 @@ export function EditorialBanner() {
         <div className="grid lg:grid-cols-2 gap-4 sm:gap-6">
 
           {/* Panel 1 — dark/hero */}
-          <div className="relative overflow-hidden bg-[#1A1A1A] group" style={{ minHeight: "480px" }}>
+          <div className="relative overflow-hidden group" style={{ minHeight: "480px", backgroundColor: "#3D0000" }}>
             <Image
               src="/images/PLP_WOMENS_NA_FOOTER_1.jpg"
               alt="Women's Collection"

@@ -4,7 +4,7 @@ import { footerLinks } from "@/mock/navigation";
 
 export function SiteFooter() {
   return (
-    <footer className="bg-[#1A1A1A] text-white">
+    <footer className="text-white" style={{ backgroundColor: "#3D0000" }}>
       {/* Trust bar */}
       <div className="border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">

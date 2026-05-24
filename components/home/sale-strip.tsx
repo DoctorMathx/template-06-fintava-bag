@@ -10,7 +10,7 @@ export function SaleStrip() {
     <section className="py-10 lg:py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Banner */}
-        <div className="relative overflow-hidden bg-[#1A1A1A] mb-7" style={{ minHeight: "140px" }}>
+        <div className="relative overflow-hidden mb-7" style={{ minHeight: "140px", backgroundColor: "#3D0000" }}>
           <Image
             src="/images/sale-banner.jpg"
             alt="Sale"
