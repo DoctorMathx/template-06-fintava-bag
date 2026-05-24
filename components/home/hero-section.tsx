@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export function HeroSection() {
   return (
-    <section className="relative w-full overflow-hidden bg-[#EDE8E1]">
+    <section className="relative w-full overflow-hidden bg-[#F2C8B5]">
       {/* Full-bleed image */}
       <div className="relative w-full" style={{ height: "clamp(560px, 78vh, 820px)" }}>
         <Image
-          src="/images/hero-bags-editorial.png"
+          src="/images/hero-woman-bags.png"
           alt="Fintava — Premium leather bags"
           fill
           priority
@@ -15,33 +15,35 @@ export function HeroSection() {
           sizes="100vw"
         />
 
-        {/* Soft gradient on bottom-left only — preserves the natural image elsewhere */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-black/55 via-black/15 to-transparent lg:from-black/45 lg:via-transparent" />
+        {/* Gradient — bottom so dark text on light bg doesn't fight */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
-        {/* Eyebrow — top center, Coach-style mini-headline */}
-        <div className="absolute top-8 sm:top-12 left-1/2 -translate-x-1/2 text-center">
-          <p className="text-white/85 text-[10px] sm:text-[11px] uppercase tracking-[0.32em] font-medium">
-            The New Season
-          </p>
+        {/* Eyebrow — top left */}
+        <div className="absolute top-8 sm:top-12 left-0 right-0">
+          <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
+            <p className="text-white/90 text-[10px] sm:text-[11px] uppercase tracking-[0.32em] font-semibold">
+              The New Season — 2026
+            </p>
+          </div>
         </div>
 
         {/* Main content — bottom-left aligned, Coach-style */}
         <div className="absolute inset-x-0 bottom-0">
           <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 pb-12 sm:pb-16 lg:pb-20">
-            <div className="max-w-xl">
+            <div className="max-w-lg">
               <h1
-                className="font-display text-white leading-[0.95] mb-6 sm:mb-8"
+                className="font-display text-white leading-[0.95] mb-5 sm:mb-7"
                 style={{
-                  fontSize: "clamp(2.6rem, 6vw, 5.2rem)",
+                  fontSize: "clamp(2.8rem, 6.5vw, 5.5rem)",
                   letterSpacing: "-0.02em",
                   fontWeight: 500,
                 }}
               >
-                Carry your<br />
-                <em className="italic font-light text-white">story</em>.
+                Every bag,<br />
+                <em className="italic font-light">your story</em>.
               </h1>
-              <p className="text-white/85 text-[13px] sm:text-sm leading-[1.7] mb-7 sm:mb-9 max-w-[380px] font-light">
-                Premium leather bags, handcrafted for the discerning Nigerian. Built to last. Designed to be loved.
+              <p className="text-white/80 text-[13px] sm:text-sm leading-[1.7] mb-7 sm:mb-9 max-w-[360px] font-light">
+                Premium leather crafted for Nigeria's modern woman. Built to last. Designed to be loved.
               </p>
               <Link
                 href="/collections/womens"
