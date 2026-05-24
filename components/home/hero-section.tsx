@@ -7,7 +7,7 @@ export function HeroSection() {
       {/* Full-bleed image */}
       <div className="relative w-full" style={{ height: "clamp(560px, 78vh, 820px)" }}>
         <Image
-          src="/images/hero-woman-bags.png"
+          src="/images/pexels-dhanno-21897313.jpg"
           alt="Fintava — Premium leather bags"
           fill
           priority
