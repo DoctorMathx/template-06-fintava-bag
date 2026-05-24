@@ -24,7 +24,9 @@ const playfair = Playfair_Display({
   style: ["normal", "italic"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://fintava.ng";
+// Use the real deployed URL — set NEXT_PUBLIC_SITE_URL in Vercel env vars to override
+const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://template-06-fintava-bag.vercel.app").replace(/\/$/, "");
+const ogImage = `${siteUrl}/og.jpg`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -38,13 +40,22 @@ export const metadata: Metadata = {
     description: "Curated luxury leather bags for Nigeria's modern woman and man. Shop premium handbags, totes, crossbody bags, and briefcases.",
     url: siteUrl,
     locale: "en_NG",
-    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Fintava — Premium Leather Bags Nigeria" }],
+    images: [
+      {
+        url: ogImage,
+        secureUrl: ogImage,
+        width: 1200,
+        height: 630,
+        alt: "Fintava — Premium Leather Bags Nigeria",
+        type: "image/jpeg",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Fintava — Premium Leather Bags Nigeria",
     description: "Curated luxury leather bags for Nigeria's modern woman and man.",
-    images: ["/opengraph-image"],
+    images: [ogImage],
   },
   robots: { index: true, follow: true },
 };
